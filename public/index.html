@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Socket Boi</title>
+</head>
+<body>
+    <header class="header">
+        <div id="chatting-with">Kewl Dood Chat Service</div>
+    </header>
+    <div class="container"> 
+        <div id="messaging" class="hidden">
+            <div id="messageInterface"></div>
+            <div id="typing-list">
+                <p class="typing"></p>
+            </div>
+            <form id="message-form" action="" class="form">
+                <input autocomplete="off" id="input" class="input" placeholder="Message to Chat"/>
+                <button>Send</button>
+            </form>
+        </div>
+        <form id="name-form" class="form" action="">
+            <input autocomplete="off" id="name-input" class="input name" placeholder="Enter Username"/>
+            <button>Join!</button>
+        </form>
+        <div id="member-info" class="hidden">
+
+        </div>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./clientIndex.js"></script>
+</body>
+</html>
