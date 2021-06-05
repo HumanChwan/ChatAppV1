@@ -2,7 +2,7 @@ import express from 'express';
 import { Room, User } from './Classes.js';
 const app = express();
 app.use(express.static('public'));
-const port = 3000;
+const port = process.env.PORT || 3000;
 import { createServer } from 'http';
 const server = createServer(app);
 import { Server } from 'socket.io';
